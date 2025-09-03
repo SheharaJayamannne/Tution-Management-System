@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:contentDescription="App Logo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Header Text -->
+        <TextView
+            android:text="Admin Dashboard"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:gravity="center" />
+
+        <!-- Container card for buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_marginBottom="18dp"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome,"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"/>
+
+            <!-- Buttons with consistent style -->
+            <Button
+                android:id="@+id/buttonRegisterStudent"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="Register Student" />
+
+            <Button
+                android:id="@+id/buttonAssignStudent"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="Assign Student to Course" />
+
+            <Button
+                android:id="@+id/buttonRegisterTeacher"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="Register Teacher" />
+
+            <Button
+                android:id="@+id/buttonAddCourse"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="Add Course" />
+
+            <Button
+                android:id="@+id/buttonManageStudents"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="Manage Students" />
+
+            <Button
+                android:id="@+id/buttonManageTeachers"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="Manage Teachers" />
+
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="Logout" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

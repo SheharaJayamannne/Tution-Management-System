@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DashboardButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:backgroundTint">#6200EE</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:radius">8dp</item>
+    </style>
+    <style name="RedDashboardButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@android:color/holo_red_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

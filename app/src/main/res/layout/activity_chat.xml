@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Chat Header -->
+    <TextView
+        android:id="@+id/textViewChatHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Messages to "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2E3A59"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Message List -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="12dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:clipToPadding="false"
+            android:background="#FFFFFF"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Message Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Type a message..."
+            android:background="@android:color/transparent"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minLines="1"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <ImageButton
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:contentDescription="Send"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/button_color"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

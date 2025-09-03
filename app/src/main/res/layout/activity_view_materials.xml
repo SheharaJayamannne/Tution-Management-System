@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/textMaterialsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Materials"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:id="@+id/imageViewMaterials"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:src="@drawable/assignments"
+            android:contentDescription="Materials Image"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Material List -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        android:backgroundTint="@android:color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMaterials"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:scrollbars="vertical" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/assignments"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="24dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Title -->
+        <TextView
+            android:text="Upload Assignment"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Assignment Title -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:hint="Assignment Title"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:hint="Description"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <!-- Due Date -->
+        <EditText
+            android:id="@+id/editTextDueDate"
+            android:hint="Due Date"
+            android:focusable="false"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <!-- Courses Spinner -->
+        <Spinner
+            android:id="@+id/spinnerCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background" />
+
+        <!-- Attach File Button -->
+        <Button
+            android:id="@+id/buttonSelectFile"
+            android:text="Attach File"
+            android:background="@color/button_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Upload Button -->
+        <Button
+            android:id="@+id/buttonUpload"
+            android:text="Upload Assignment"
+            android:background="@color/button_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+
+</ScrollView>

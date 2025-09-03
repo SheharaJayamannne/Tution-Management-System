@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/logo"
+            android:contentDescription="App Logo"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Main Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:elevation="6dp"
+            android:padding="24dp"
+            android:clipToPadding="false">
+
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/btnAttendance"
+                style="@style/DashboardButton"
+                android:text="📷 Take Attendance" />
+
+            <Button
+                android:id="@+id/btnAssignments"
+                style="@style/DashboardButton"
+                android:text="📘 Upload Assignment" />
+
+            <Button
+                android:id="@+id/buttonReleaseResults"
+                style="@style/DashboardButton"
+                android:text="📊 Release Results" />
+
+            <Button
+                android:id="@+id/btnUploadMaterials"
+                style="@style/DashboardButton"
+                android:text="📤 Upload Course Materials" />
+
+            <Button
+                android:id="@+id/btnMaterials"
+                style="@style/DashboardButton"
+                android:text="📚 Manage Materials" />
+
+            <Button
+                android:id="@+id/btnNotify"
+                style="@style/DashboardButton"
+                android:text="📨 Send Messages" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/DashboardButton"
+                android:text="🚪 Logout" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

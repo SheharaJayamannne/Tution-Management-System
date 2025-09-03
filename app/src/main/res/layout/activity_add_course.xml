@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Optional Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/add_courses"
+            android:contentDescription="App Logo" />
+
+        <!-- Page Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Course"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <!-- Card-style container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:elevation="6dp"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/editTextCourseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Course Name"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Teacher"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTeachers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/buttonAddCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Course"
+                android:minHeight="48dp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/button_color"
+                android:elevation="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

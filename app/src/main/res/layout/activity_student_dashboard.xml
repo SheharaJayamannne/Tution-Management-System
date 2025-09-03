@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/logo"
+            android:contentDescription="App Logo"
+            android:scaleType="fitCenter" />
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, "
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/textUnreadCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unread Messages: 0"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:paddingTop="4dp"
+            android:paddingBottom="10dp" />
+
+        <!-- Main card container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:elevation="6dp"
+            android:padding="24dp"
+            android:clipToPadding="false">
+
+
+            <!-- Location Link -->
+            <TextView
+                android:id="@+id/textViewInstituteLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visit our Tuition Center at Colombo"
+                android:textSize="16sp"
+                android:textColor="@color/link_color"
+                android:textStyle="bold"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="12dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/buttonScanAttendance"
+                style="@style/DashboardButton"
+                android:text="📷 Scan QR for Attendance" />
+
+               <Button
+                android:id="@+id/buttonViewAssignments"
+                style="@style/DashboardButton"
+                android:text="📘 View Assignments" />
+
+            <Button
+                android:id="@+id/buttonSubmitAssignments"
+                style="@style/DashboardButton"
+                android:text="📤 Submit Assignments" />
+
+            <Button
+                android:id="@+id/buttonViewResults"
+                style="@style/DashboardButton"
+                android:text="📊 View Results" />
+
+            <Button
+                android:id="@+id/buttonViewMaterials"
+                style="@style/DashboardButton"
+                android:text="📚 View Course Materials" />
+
+            <Button
+                android:id="@+id/buttonViewMessages"
+                style="@style/DashboardButton"
+                android:text="✉️ View Messages" />
+
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/DashboardButton"
+                android:layout_width="match_parent"
+                android:text="🚪 Logout" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
